@@ -1,0 +1,11 @@
+sudo apt-get install freeglut3 freeglut3-dev libglew1.5 libglew1.5-dev
+sudo apt-get install cmake xorg-dev libglu1-mesa-dev 
+
+//https://stackoverflow.com/questions/17768008/how-to-build-install-glfw-3-and-use-it-in-a-linux-project
+
+g++ 
+main.cpp
+-I../include 
+-lGL -lGLU -lglfw3 -lGLEW 
+-lX11 -lpthread -ldl
+-lglut -lXxf86vm -lXrandr -lXi -lXinerama -lXcursor -lc -lm 
